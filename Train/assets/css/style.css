@@ -1,0 +1,110 @@
+body {
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #cccccc;
+	margin-bottom: 1%;
+
+	width: 100%;
+}
+
+table th {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: white;
+	background-color: #4aaaa5;
+
+	border-bottom-style: solid;
+	border-bottom-color: #cccccc;
+	border-bottom-width: 2px;  
+}
+
+table tr {
+	border-style: solid;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-width: 2px; 
+
+}
+
+table tr:last-child {
+	border-bottom-style: none; 
+}
+
+
+table td {
+	padding: 1%;
+}
+
+
+#scheduleContainer {
+	width: 100%;
+}
+
+#sHead {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #cccccc;
+	background-color: #4aaaa5;
+	color: white;
+	text-shadow: 2px 1px #0c2027;
+
+	margin-bottom: 1%;
+
+	word-wrap: break-word;
+}
+
+#sBody {
+	width: 75%;
+	margin-right: 12.5%;
+	margin-left: 12.5%;
+}
+
+
+
+
+#addTrainContainer {
+	width: 100%;
+	margin-bottom: 1%;
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: #cccccc;
+
+	clear: both;
+
+	font-weight: bold;
+	text-shadow: 2px 1px #0c2027;
+	color: white;
+	background-color: #4aaaa5;
+
+	word-wrap: break-word;
+}
+
+#tNameC {
+	width: 25%;
+	float: left;
+}
+
+#tDestinationC {
+	width: 25%;
+	float: left;
+}
+
+#tFTTC {
+	width: 25%;
+	float: left;
+}
+
+#tFrequencyC {
+	width: 25%;
+	float: left;
+}
+
+#submitAllC {
+	margin-bottom: 1%;
+}

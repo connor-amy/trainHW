@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAQrQTGEalM456OjxEzOgLnLvPSPjQKQOY",
+      authDomain: "trainschedule-b57a5.firebaseapp.com",
+      databaseURL: "https://trainschedule-b57a5.firebaseio.com",
+      projectId: "trainschedule-b57a5",
+      storageBucket: "",
+      messagingSenderId: "894647949679"
+    };
+    firebase.initializeApp(config);
+  </script>
+  
+  <!--Other file links -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/moment.js" ></script>
+	<script type="text/javascript" src="assets/javascript/app.js" ></script>
+	<title>Train Schedule</title>
+</head>
+<body>
+
+
+  <!--Contains the train schedule elements-->
+  <div id="scheduleContainer">
+    <div id="sHead"><h2>Train Schedule:</h2></div>
+    <div id="sBody">
+      <table id="sTable">
+        <tr id="sTableC">
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+  <!--Contains the elements used to add more trains to the database-->
+  <div id="addTrainContainer">
+    <div id="tNameC">
+      <p>Train Name:</p>
+      <input type="text" id="tName" name="tNam">
+    </div>
+
+    <div id="tDestinationC">
+      <p>Destination:</p>
+      <input type="text" id="tDestination" name="tDest">
+    </div>
+
+    <div id="tFTTC">
+      <p>First Train Time (HH:mm - military time):</p>
+      <input type="text" id="tFTT" name="tFT">
+    </div>
+
+    <div id="tFrequencyC">
+      <p>Frequency (min):</p>
+      <input type="text" id="tFrequency" name="tFreq">
+    </div>
+
+    <div id="submitAllC">
+      <button id="submitData">Add Train</button>
+    </div>
+  </div>
+  
+  <!--Pulls the data from the database and displays it. Use to check for database updates without having to add a new train-->
+  <button id="getAllData">Get Data</button>
+
+
+</body>
+</html>
